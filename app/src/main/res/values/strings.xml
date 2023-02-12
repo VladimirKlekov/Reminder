@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Reminder</string>
+    <string name="add_event">Add event</string>
+    <string name="settings">Settings</string>
+    <string name="feedback">Feedback</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="event_month">EVENT OF THE MONTH</string>
+    <string name="main_menu">Menu</string>
+
 </resources>
