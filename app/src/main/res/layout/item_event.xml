@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wish_list_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:strokeColor="#B5A2E1"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/padding_16dp"
+        android:paddingTop="@dimen/padding_8dp"
+        android:paddingEnd="@dimen/padding_16dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/date_event_text_view"
+            style="@style/card_label_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text=""
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="01.01.2023" />
+
+        <TextView
+            android:id="@+id/name_event_text_view"
+            style="@style/card_label_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text=""
+            android:textSize="24sp"
+            android:textColor="@color/mtrl_textinput_empty_field_stroke_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="День рождения" />
+
+        <ImageView
+            android:id="@+id/divider1_image_view"
+            style="@style/card_divider_style"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="-16dp"
+            android:background="#B5A2E1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_event_text_view"
+            tools:ignore="ContentDescription" />
+
+
+        <TextView
+            android:id="@+id/last_name_text_view"
+            style="@style/card_label_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider1_image_view"
+            tools:text="Иванов Иван Иванович" />
+
+        <ImageView
+            android:id="@+id/divider2_image_view"
+            style="@style/card_divider_style"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="-16dp"
+            android:background="#B5A2E1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_name_text_view"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/congratulate_btn_IE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Поздравить"
+            app:backgroundTint="#7B68EE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2_image_view" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

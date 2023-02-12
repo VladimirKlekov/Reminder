@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="card_label_style">
+        <item name="android:textSize">
+            14sp
+        </item>
+        <item name="android:textColor">
+            #575757
+        </item>
+        <item name="android:layout_marginTop">
+            6dp
+        </item>
+        <item name="android:layout_marginBottom">
+            6dp
+        </item>
+    </style>
+
+    <style name="card_divider_style">
+        <item name="android:background">
+            #14000000
+        </item>
+        <item name="android:layout_marginTop">
+            6dp
+        </item>
+    </style>
+
+
+</resources>

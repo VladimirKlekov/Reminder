@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Reminder</string>
+    <string name="add_event">Добавит событие</string>
+    <string name="settings">Настройки</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="congratulations">Поздравляшка</string>
+    <string name="event_month">СОБЫТИЯ МЕСЯЦА</string>
+    <string name="main_menu">Меню</string>
+</resources>
