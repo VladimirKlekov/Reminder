@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="main_color">#7B68EE</color>
+    <color name="transparent">@android:color/transparent</color>
 
     <color name="mtrl_textinput_empty_field_stroke_color">#FF0000</color>
     <color name="execution_priority_low">#01A19F</color>

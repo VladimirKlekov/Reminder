@@ -8,7 +8,7 @@
     android:layout_margin="12dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="8dp"
-    app:strokeColor="#B5A2E1"
+    app:strokeColor="@color/main_color"
     app:strokeWidth="2dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="-16dp"
-            android:background="#B5A2E1"
+            android:background="@color/main_color"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/date_event_text_view"
             tools:ignore="ContentDescription" />
@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="-16dp"
-            android:background="#B5A2E1"
+            android:background="@color/main_color"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/last_name_text_view"
             tools:ignore="ContentDescription" />
@@ -86,13 +86,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Поздравить"
-            app:backgroundTint="#7B68EE"
+            app:backgroundTint="@color/main_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider2_image_view" />
-
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

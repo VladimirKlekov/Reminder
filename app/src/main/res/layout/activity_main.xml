@@ -16,7 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-
     <TextView
         android:id="@+id/titleMA"
         android:layout_width="match_parent"
@@ -25,7 +24,7 @@
         android:fontFamily="sans-serif"
         android:text="@string/event_month"
         android:textAlignment="center"
-        android:textColor="#6A5ACD"
+        android:textColor="@color/main_color"
         android:textStyle="bold"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,13 +34,32 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_MA"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="520dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="3"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         tools:listitem="@layout/item_event" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
 
+        <ImageButton
+            android:id="@+id/add_event_Btn_MA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_event_icon"
+            android:background="@color/transparent"
+            app:tint="@color/main_color"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/add_event"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+    </LinearLayout>
 
 </LinearLayout>
