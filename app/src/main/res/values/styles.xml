@@ -24,5 +24,9 @@
         </item>
     </style>
 
+    <style name="TextInputLayoutOutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/execution_priority_low</item>
+    </style>
+
 
 </resources>

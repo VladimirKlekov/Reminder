@@ -7,4 +7,12 @@
     <string name="congratulations">Поздравляшка</string>
     <string name="event_month">СОБЫТИЯ МЕСЯЦА</string>
     <string name="main_menu">Меню</string>
+    <string name="create_event">СОЗДАНИЕ СОБЫТИЯ</string>
+    <string name="last_name">Фамилия</string>
+    <string name="first_name">Имя</string>
+    <string name="middle_name">Отчество</string>
+    <string name="event">Событие</string>
+    <string name="date_birth">День рождения</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
 </resources>

@@ -6,5 +6,13 @@
     <string name="congratulations">Congratulations</string>
     <string name="event_month">EVENT OF THE MONTH</string>
     <string name="main_menu">Menu</string>
+    <string name="create_event">CREATING AN EVENT</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="middle_name">Middle name</string>
+    <string name="date_birth">Birthday</string>
+    <string name="event">Event</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
 
 </resources>
