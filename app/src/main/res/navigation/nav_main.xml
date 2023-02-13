@@ -2,14 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@id/mainActivity">
+    app:startDestination="@id/mainFragment">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.reminder.MainActivity"
-        android:label="MainActivity" />
     <fragment
-        android:id="@+id/newUser"
-        android:name="com.example.reminder.ui.NewUser"
-        android:label="NewUser" />
+        android:id="@+id/mainFragment"
+        android:name="com.example.reminder.ui.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_createNewUser"
+            app:destination="@id/createNewUser" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewUser"
+        android:name="com.example.reminder.ui.CreateNewUser"
+        android:label="CreateNewUser" />
 </navigation>

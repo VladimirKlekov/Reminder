@@ -33,7 +33,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_MA"
         android:layout_width="match_parent"
-        android:layout_height="520dp"
+        android:layout_height="500dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="3"
         tools:layout_editor_absoluteX="0dp"
