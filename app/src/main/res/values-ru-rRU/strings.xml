@@ -15,4 +15,8 @@
     <string name="date_birth">День рождения</string>
     <string name="save">Сохранить</string>
     <string name="cancel">Отмена</string>
+    <string name="app_icon">Иконка</string>
+    <string name="select_action">ВЫБИРИТЕ ДЕЙСТВИЕ</string>
+    <string name="open">ОТКРЫТЬ</string>
+    <string name="close">ЗАКРЫТЬ</string>
 </resources>

@@ -10,7 +10,7 @@
     android:background="@color/white">
 
     <include
-        android:id="@+id/container_custom_app_bar_include_on_fragment_list_wish"
+        android:id="@+id/container_custom_app_bar"
         layout="@layout/top_app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -33,32 +33,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_MA"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="wrap_content"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="3"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         tools:listitem="@layout/item_event" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1"
-        >
 
-        <ImageButton
-            android:id="@+id/add_event_Btn_MA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/add_event_icon"
-            android:background="@color/transparent"
-            app:tint="@color/main_color"
-            android:layout_marginBottom="16dp"
-            android:contentDescription="@string/add_event"
-            android:layout_weight="1"
-            tools:ignore="NestedWeights" />
-    </LinearLayout>
 
 </LinearLayout>

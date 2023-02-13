@@ -14,5 +14,10 @@
     <string name="event">Event</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="app_icon">Icon</string>
+    <string name="select_action">SELECT AN ACTION</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+
 
 </resources>

@@ -5,5 +5,6 @@ data class User (
     val lastName: String,
     val firstName: String,
     val middleName: String,
-    val dateBirth: Long
+    val dateBirth: Long,
+    val event: String
         )
