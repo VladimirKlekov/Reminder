@@ -19,4 +19,5 @@
     <string name="select_action">ВЫБИРИТЕ ДЕЙСТВИЕ</string>
     <string name="open">ОТКРЫТЬ</string>
     <string name="close">ЗАКРЫТЬ</string>
+    <string name="select_date">ВЫБЕРИТЕ ДАТУ</string>
 </resources>

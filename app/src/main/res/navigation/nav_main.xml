@@ -15,5 +15,13 @@
     <fragment
         android:id="@+id/createNewUser"
         android:name="com.example.reminder.ui.CreateNewUser"
-        android:label="CreateNewUser" />
+        android:label="CreateNewUser" >
+        <action
+            android:id="@+id/action_createNewUser_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.reminder.ui.CalendarFragment"
+        android:label="CalendarFragment" />
 </navigation>
