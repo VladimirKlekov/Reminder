@@ -51,13 +51,13 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
             findNavController().navigate(R.id.action_mainFragment_to_createNewUser)
         }
+        var tempList = viewModel.data
 
-
-        val tempList = ArrayList<String>()
-        tempList.add("Первый")
-        tempList.add("Второй")
-        tempList.add("Третий")
-        tempList.add("Четвертый")
+//        val tempList = ArrayList<String>()
+//        tempList.add("Первый")
+//        tempList.add("Второй")
+//        tempList.add("Третий")
+//        tempList.add("Четвертый")
 
         binding.recyclerViewMA.setHasFixedSize(true)
         binding.recyclerViewMA.setItemViewCacheSize(13)//размер кэша для количества музыки

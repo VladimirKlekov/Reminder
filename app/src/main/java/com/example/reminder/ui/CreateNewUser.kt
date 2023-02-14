@@ -19,7 +19,7 @@ import com.example.reminder.veiwmodel.UserViewModel
 class CreateNewUser : Fragment(R.layout.fragment_create_new_user) {
 
     private lateinit var binding: FragmentCreateNewUserBinding
-    private val viewModel: UserViewModel by viewModels()
+    private  val viewModel: UserViewModel by viewModels()
 
 //
 override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,11 +38,13 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
         binding.saveButton.setOnClickListener {
             val createPatient = User(
-                id = 1,
+                id = null,
 
-                    lastName = binding.lastNameTextInputEditText.text.toString(),
-                    firstName = binding.firstNameTextInputEditText.text.toString(),
-                    middleName = binding.middleNameTextInputEditText.text.toString(),
+                    lastName = Utils.fullUserNameGenerator(binding.lastNameTextInputEditText.text.toString(),
+                        binding.firstNameTextInputEditText.text.toString(),
+                        binding.middleNameTextInputEditText.text.toString()),
+//                    firstName = binding.firstNameTextInputEditText.text.toString(),
+//                    middleName = binding.middleNameTextInputEditText.text.toString(),
                 dateBirth = 0L,
                 event = "День рождения"
             )
