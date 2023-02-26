@@ -62,6 +62,8 @@ class CreateNewUser : Fragment(R.layout.fragment_create_new_user) {
             findNavController().navigate(R.id.action_createNewUser_to_calendarFragment)
         }
 
+        val dateBirthArgs = arguments?.getString("date")
+val test = dateBirthArgs
 
         binding.saveButton.setOnClickListener {
             val createPatient = User(
