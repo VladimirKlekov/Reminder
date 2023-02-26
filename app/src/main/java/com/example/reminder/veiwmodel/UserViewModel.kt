@@ -11,9 +11,9 @@ class UserViewModel(
 
 
     private val userRepository: UserRepository = UserRepositoryImpl()
-    var listNewUser = ArrayList<String>()
 
-    val data: ArrayList<User>
+
+    val data: List<User>
         get() = userRepository.userList
 
     fun createUser(user: User) {

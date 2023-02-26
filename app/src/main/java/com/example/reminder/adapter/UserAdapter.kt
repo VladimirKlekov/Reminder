@@ -10,7 +10,7 @@ import com.example.reminder.dto.User
 
 class UserAdapter(
     private val context: Context,
-    private var userListAdapter: ArrayList<User>
+    private var userListAdapter: List<User>
 ) :
     RecyclerView.Adapter<UserAdapter.MyUserHolder>() {
 
@@ -43,8 +43,8 @@ class UserAdapter(
 
     @SuppressLint("NotifyDataSetChanged")
     fun updateMusicList(userList: ArrayList<User>) {
-        userListAdapter = ArrayList()
-        userListAdapter.addAll(userList)
+        userListAdapter = emptyList()
+        userListAdapter.plus(userList)
         notifyDataSetChanged()
     }
 

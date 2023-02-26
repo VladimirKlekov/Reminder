@@ -28,9 +28,15 @@ class CreateNewUser : Fragment(R.layout.fragment_create_new_user) {
     private lateinit var binding: FragmentCreateNewUserBinding
     private val viewModel: UserViewModel by viewModels()
     private lateinit var statusChoice: User.Status
+    private lateinit var vDateBirth: TextInputEditText
+
+
+
+
     private var lastName: String = ""
     private var firstName: String = ""
     private var middleName: String = ""
+
 
     lateinit var tvDataPicker: TextInputEditText
     private var dataString = ""
@@ -53,25 +59,36 @@ class CreateNewUser : Fragment(R.layout.fragment_create_new_user) {
         binding = FragmentCreateNewUserBinding.bind(view)
 
 
+
         binding.createDateBirthTextInputEditText.setOnClickListener {
             findNavController().navigate(R.id.action_createNewUser_to_calendarFragment)
         }
 
-//        var test = Utils.fullUserNameGenerator(
-//            lastName, firstName, middleName)
 
-        lastName = binding.lastNameTextInputEditText.text.toString()
-        firstName = binding.firstNameTextInputEditText.text.toString()
-        middleName = binding.middleNameTextInputEditText.text.toString()
+//        val dateBirthArgs = arguments?.getString("date")
+//        binding.createDateBirthTextInputEditText.setText(dateBirthArgs)
 
-        viewModel.listNewUser.add(lastName)
-        viewModel.listNewUser.add(firstName)
-        viewModel.listNewUser.add(middleName)
-
-//
-
-        val dateBirthArgs = arguments?.getString("date")
-        binding.createDateBirthTextInputEditText.setText(dateBirthArgs)
+            /** Календарь **/
+            val calendar = Calendar.getInstance()
+            vDateBirth = binding.createDateBirthTextInputEditText
+            val dateBirth =
+                DatePickerDialog.OnDateSetListener { _, year, month, dayOfMonth ->
+                    calendar.set(Calendar.YEAR, year)
+                    calendar.set(Calendar.MONTH, month)
+                    calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
+                    Utils.updateDateLabel(calendar, vDateBirth)
+                }
+            vDateBirth.setOnClickListener {
+                DatePickerDialog(
+                    this.requireContext(),
+                    dateBirth,
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH)
+                ).apply {
+                    this.datePicker.minDate = (0)
+                }.show()
+            }
 
         lifecycleScope.launch {
             val adapter = ArrayAdapter(
@@ -92,9 +109,11 @@ class CreateNewUser : Fragment(R.layout.fragment_create_new_user) {
             val createUser = User(
                 id = null,
                 lastName = Utils.fullUserNameGenerator(
-                    lastName, firstName, middleName
+                    binding.lastNameTextInputEditText.text.toString(),
+                    binding.firstNameTextInputEditText.text.toString(),
+                    binding.middleNameTextInputEditText.text.toString()
                 ),
-                dateBirth = dateBirthArgs,
+                dateBirth = vDateBirth.text.toString(),
                 event = statusChoice
             )
             viewModel.createUser(createUser)

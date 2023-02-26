@@ -4,11 +4,11 @@ import com.example.reminder.dto.User
 
 class UserRepositoryImpl():UserRepository {
 
-    override var userList: ArrayList<User> = ArrayList()
+    override var userList: List<User> = emptyList()
     private set
 
 
     override fun createUser(user: User) {
-        userList.add(user)
+        userList.plus(user)
     }
 }

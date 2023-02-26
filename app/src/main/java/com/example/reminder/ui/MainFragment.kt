@@ -51,10 +51,10 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
             findNavController().navigate(R.id.action_mainFragment_to_createNewUser)
         }
-        var tempList = viewModel.data
+        //var tempList = viewModel.data
 
-//        val tempList = ArrayList<String>()
-//        tempList.add("Первый")
+        val tempList = emptyList<User>()
+       tempList.plus(viewModel.data)
 //        tempList.add("Второй")
 //        tempList.add("Третий")
 //        tempList.add("Четвертый")
