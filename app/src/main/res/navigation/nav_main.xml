@@ -23,5 +23,9 @@
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.reminder.ui.CalendarFragment"
-        android:label="CalendarFragment" />
+        android:label="CalendarFragment" >
+        <action
+            android:id="@+id/action_calendarFragment_to_createNewUser"
+            app:destination="@id/createNewUser" />
+    </fragment>
 </navigation>

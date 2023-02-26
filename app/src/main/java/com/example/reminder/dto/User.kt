@@ -5,6 +5,11 @@ data class User (
     val lastName: String,
 //    val firstName: String,
 //    val middleName: String,
-    val dateBirth: Long,
-    val event: String
-        )
+    val dateBirth: String?,
+    val event: Status
+        ) {
+
+    enum class Status {
+        BIRTHDAY, EVENT
+    }
+}

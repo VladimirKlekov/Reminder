@@ -8,7 +8,10 @@ import com.example.reminder.repository.UserRepositoryImpl
 class UserViewModel(
 ) : ViewModel() {
 
+
+
     private val userRepository: UserRepository = UserRepositoryImpl()
+    var listNewUser = ArrayList<String>()
 
     val data: ArrayList<User>
         get() = userRepository.userList
@@ -20,4 +23,10 @@ class UserViewModel(
     fun editUser(user: User) {
 
     }
+
+    val statuses =
+        listOf(
+            User.Status.BIRTHDAY,
+            User.Status.EVENT,
+        )
 }
